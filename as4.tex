@@ -1,0 +1,38 @@
+\documentclass[12pt,twocolumn]{IEEEtran}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{tcolorbox}
+\usepackage{graphics}
+\title{\textbf{Assignment-4}\\ \large AI1110: Probability And Random Variables\\ IIT Hyderabad}
+\author{Pathlavath Shankar (CS21BTECH11064)\\ }
+
+\begin{document}
+    \maketitle
+    \textbf{Q Papaulis 13.8;}Find the noncausal estimators H1(\omega) \ and \ H2(\omega)\
+    \text{respectively of a process s(t) and}\\
+   \text{ its derivative s'(t) in terms of the data s(t) = s(t) + v(t)}\\
+   \text{ where}\\
+   \begin{equation}
+       Rs(\tau) = A\frac{sin^2a\tau}{\tau^2}Rv(\tau) = N\delta(\tau) = 0  
+   \end{equation}\\
+    
+    
+    \textbf{Solution:-}\textit {The fourier transform Ss(\omega)\ of  the }\\
+    \textit{function,} Rs(\tau) = A\frac{sin^2a\tau}{\tau^2}Rv(\tau) \ is\ a \ triangle\\
+    \includegraphics[width=0.5\textwidth]{tri.png}\\
+    
+    \textit{and since Sv(\omega) = N, yields}\\
+    
+    H1(\omega) = \frac{Ss(\omega)}{Ss(\omega) + Sv(\omega)} \\
+    
+   = \frac{Aa\pi(1- \omega /2a)}{Aa\pi(1- \omega \2a) + N} \\
+   
+     \textit{we show next that} H2(\omega) = j\omega H1(\omega).
+       
+       
+      
+    
+    
+\end{document}
